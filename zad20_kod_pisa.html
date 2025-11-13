@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <style>
+            textarea {
+                width: 90%;
+                height: 90%;
+                resize: none;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function okno_zamknij_pisarskikod() {
+                window.close()
+            }
+        </script>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<script type="text/javascript">
+    function okno_zamknij_pisarski() {
+        window.close()
+    }
+</script>
+<body>
+  <script>
+    function AB_pis() {
+      let aX_pis = parseFloat(document.getElementById('aX').value);
+      let aY_pis = parseFloat(document.getElementById('aY').value);
+
+      let bX_pis = parseFloat(document.getElementById('bX').value);
+      let bY_pis = parseFloat(document.getElementById('bY').value);
+
+
+      document.getElementById("answer").innerHTML = "|AB|= "
+        + (Math.sqrt((aX_pis - bX_pis) ** 2 + (aY_pis - bY_pis) ** 2)).toFixed(2);
+    }
+
+    function BC_pis() {
+      let bX_pis = parseFloat(document.getElementById('bX').value);
+      let bY_pis = parseFloat(document.getElementById('bY').value);
+
+      let cX_pis = parseFloat(document.getElementById('cX').value);
+      let cY_pis = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|BC|= "
+        + (Math.sqrt((cX_pis - bX_pis) ** 2 + (cY_pis - bY_pis) ** 2)).toFixed(2);
+    }
+
+    function AC_pis() {
+      let aX_pis = parseFloat(document.getElementById('aX').value);
+      let aY_pis = parseFloat(document.getElementById('aY').value);
+      let cX_pis = parseFloat(document.getElementById('cX').value);
+      let cY_pis = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|AC|= "
+        + (Math.sqrt((aX_pis - cX_pis) ** 2 + (aY_pis - cY_pis) ** 2)).toFixed(2);
+    }
+
+  </script>
+  Podaj X punktu A: <input type="text" id="aX">
+  <br>
+  Podaj Y punktu A: <input type="text" id="aY">
+  <br>
+  <br>
+  <br>
+  Podaj X punktu B: <input type="text" id="bX">
+  <br>
+  Podaj Y punktu B: <input type="text" id="bY">
+  <br>
+  <br>
+  <br>
+  Podaj X punktu C: <input type="text" id="cX">
+  <br>
+  Podaj Y punktu C: <input type="text" id="cY">
+  <br>
+  <br>
+  <br>
+
+
+  <input type="button" value="Oblicz AB" onclick="AB_pis()">
+  <br>
+  <br>
+  <input type="button" value="Oblicz BC" onclick="BC_pis()">
+  <br>
+  <br>
+  <input type="button" value="Oblicz AC" onclick="AC_pis()">
+  <br>
+  <br>
+  <br>
+
+  <div style="color:red;font-size:50px;" id="answer"></div>
+</body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pisarski()">
+</html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pisarskikod()"/>
+</body>
+</html>

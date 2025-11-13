@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <style>
+            textarea {
+                width: 90%;
+                height: 90%;
+                resize: none;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function okno_zamknij_pisarskikod() {
+                window.close()
+            }
+        </script>
+    </head>
+    <body bgcolor="silver">
+<textarea disabled readonly>
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <title>Obliczenia geometryczne</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function okno_zamknij_pisarsk() {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        <div style="color: navy; font-size: 20px;">
+            <script language="JavaScript">
+                function pole_pisa(a_pis, b_pis) {
+                    return a_pis * b_pis;
+                }
+    
+                function obwod_pisa(a_pis, b_pis) {
+                    return 2 * (a_pis + b_pis);
+                }
+    
+                var a_pisa = parseFloat(prompt("Podaj długość boku a: ", ""));
+                var b_pisa = parseFloat(prompt("Podaj długość boku b: ", ""));
+    
+                document.write("Pole prostokąta: " + pole_pisa(a_pis, b_pis) + "<br>");
+                document.write("Obwód prostokąta: " + obwod_pisa(a_pis, b_pis) + "<br>");
+            </script>
+        </div>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_pisarski()" />
+    </body>
+    </html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pisarskikod()"/>
+</body>
+</html>
