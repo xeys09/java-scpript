@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+    <script type="text/javascript">
+     function okno_zamknij_pis() 
+     {
+     window.close()
+     }
+     function Obw_pis(parametry)
+    {
+    var a_pis= parseFloat(document.getElementById('a').value);
+    var b_pis= parseFloat(document.getElementById('b').value);
+    var c_pis= parseFloat(document.getElementById('c').value);
+    var result2= a_pis+b_pis+(2*c_pis);
+    document.getElementById("nazwa").innerHTML = "Obwód = "+result2.toFixed(2)+" cm";
+    }
+    
+    function Pow_pis(parametry)
+    {
+    var a_pis = parseFloat(document.getElementById('a').value);
+    var b_pis= parseFloat(document.getElementById('b').value);
+    var h_pis= parseFloat(document.getElementById('h').value);
+    var result1 = (a_pis+b_pis) * h_pis/2;
+    document.getElementById("nazwa").innerHTML = "Pole trapezu rownóramiennego= "+result1.toFixed(2)+" cm^2";
+    }
+    </script>
+    <h1>Oblilarnie pola oraz obwodu trapez równoramie</h1><br><br>
+    Podaj punkt A:      <input type="text" id="a"><br>
+    Podaj punkt B:      <input type="text" id="b"><br>
+    Podaj punkt C:      <input type="text" id="c"><br>
+    Podaj wysokosc (h): <input type="text" id="h"><br><br>
+    <input type="button" value="wprowadz obwod" Onclick="Obw_pis()">
+    <input type="button" value="wprowadz pole" Onclick="Pow_pis()"><br><br>
+    <div style="color:red;font-size:30px;"id="nazwa"></div>
+    
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_pis()"/>
+    </body>
+    </html>
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_larinkod()"/>
+</body>
+</html>
