@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <style>
+            textarea {
+                width: 90%;
+                height: 90%;
+                resize: none;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function okno_zamknij_piskod() {
+                window.close()
+            }
+        </script>
+    </head>
+    <body bgcolor="silver">
+<textarea disabled readonly>
+<html>
+<head>
+  <title>
+    Obliczenia pola i obwodu
+  </title>
+  <script language="JavaScript">
+  </script>
+</head>
+<script type="text/javascript">
+  function okno_zamknij_pis() {
+      window.close()
+  }
+</script>
+<body>
+  <div style="font-size: 80px;">
+    <script language="JavaScript">
+        const N0 = Number(prompt("N0: "));
+        const t = Number(prompt("t: "));
+        const T_half = Number(prompt("T1/2: "));
+
+        document.write("N0=" + N0.toFixed(2) + "sztuk" + "<br>");
+        document.write("t=" + t.toFixed(2) + "lat" + "<br>");
+        document.write("T1/2=" + T_half.toFixed(2) + "lat" + "<br>");
+        
+        const lambda = Math.LN2 / T_half;
+        
+        document.write("Lambda = " + lambda.toFixed(7) + " 1/rok" + "<br>");
+
+        const N = N0 * Math.E**(-lambda * t);
+    
+        document.write("N=" + N.toFixed(7) + "sztuk" + "<br>");
+    </script>
+  </div>
+</body>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pis()">
+</html>
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_piskod()"/>
+</body>
+</html>
