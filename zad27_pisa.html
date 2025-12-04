@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script type="text/javascript">
+        function okno_zamknij_pis() {
+            window.close();
+        }
+
+        function oblicz(odl_pis, s_pis) {
+            var odl_pis = parseFloat(odl_pis;
+            var s_pis = parseFloat(s_pis);
+
+            
+            var alfa = kat_pis(odl_pis, s_pis);
+
+           
+            var h_pis = h_pis(odl_pis, s_pis);
+
+           
+            document.getElementsByName('alfa')[0].value = alfa.toFixed(2);
+            document.getElementsByName('dlugosc')[0].value = h_pis.toFixed(2);
+        }
+
+        function kat_pis(odl_pis, s_pis) {
+            var alfa = Math.atan(odl_pis / s_pis) * (180 / Math.PI);
+            return alfa;
+        }
+
+        function h_pis(odl_pis, s_pis) {
+            var V_wynik = odl_pis * odl_pis + s_pis * s_pis;
+            var wynik = Math.sqrt(V_wynik);
+            return wynik;
+        }
+    </script>
+
+    Obliczanie wysokości oraz kąta<br><br>
+    <form name="formularz" onsubmit="oblicz(this.odleglosc.value, this.droga.value); return false;">
+        Podaj odległość pomiędzy Arturem i Dawidem: <input size="6" id="odleglosc"><br><br>
+        Podaj drogę, na której samolot znajduje się pionowo nad Dawidem: <input size="6" id="droga"><br><br>
+        <input type="submit" value="Oblicz">
+        <br><br>
+        Samolot pod pewnym kątem od Artura: <input size="6" name="alfa">
+        Wysokość (h): <input size="6" name="dlugosc">
+    </form>
+    <input type="button" value="Zamknij okno" onclick="okno_zamknij_pis()">
+</body>
+</html>
