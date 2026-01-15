@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <style>
+            textarea {
+                width: 90%;
+                height: 90%;
+                resize: none;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function okno_zamknij_pisakod() {
+                window.close()
+            }
+        </script>
+    </head>
+    <body bgcolor="silver">
+<textarea disabled readonly>
+<html>
+<head>
+<script type="text/javascript">
+var pudelko = {
+
+kolor: 'niebieski',
+typ: 'na zabawki',
+material: 'drewno',
+pokaz: function ()
+{
+
+document.write(this.kolor + ' ' + this.typ)
+}
+}
+pudelko.pokaz();
+
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe. <br>
+Obiekt to pudełko<br>
+Pola:<br>
+kolor<br>
+typ<br>
+materiał<br>
+metoda: pokaz<br>
+</body>
+</html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pisakod()"/>
+</body>
+</html>
