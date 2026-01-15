@@ -1,0 +1,33 @@
+<html>
+<head>
+<h1>pudełko</h1>
+<script type="text/javascript">
+function okno_zamknij_pisa() 
+{
+window.close()
+}
+
+function pudelko(kolor, typ, material, wielkosc) {
+  this.kolor = kolor;
+  this.typ = typ;
+  this.material = material;
+  this.wielkosc = wielkosc;
+
+  this.pokaz = function () {
+    document.write(this.kolor + ' ' + this.typ + ' ' + this.material + '<br>wielkosc: ' + this.wielkosc);
+    alert('wielkosc: ' + this.wielkosc);
+  }
+}
+
+var pudelko1 = new pudelko('niebieskie', 'na zabawki', 'drewno', '50x30cm');
+pudelko1.pokaz();
+pudelko1.pokazwielkosc();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+<br>
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_pisa()">
+</body>
+</html>
