@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script type="text/javascript">
+
+function okno_zamknij_pisa()
+{
+    window.close();
+}
+
+</script>
+<style>
+    ul {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+</style>
+<h1>Cyprian Pisarski</h1>
+<h1>1. Rodzaje „filozofii” programowania.</h1>
+<ul>
+<li>Programowanie strukturalne</li>
+<li>Programowanie obiektowe</li>
+</ul>
+
+<h1>2. Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego.</h1>
+<p>Paradygmat programowania opierający się na podziale kodu źródłowego
+programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur 
+kontrolnych w postaci instrukcji wyboru i pętli.</p>
+
+<h1>3. Programowanie obiektowe: definicja (angielski skrót, obiekty, stan, zachowanie, końcowa konkluzja czym jest programowanie obiektowe).</h1>
+<p>Programowanie obiektowe jest to podejście bardziej naturalne dla ludzi, 
+bardziej zgodne z rzeczywistością. W pamięci komputera tworzona jest wirtualna rzeczywistość. 
+Definiowane (powoływane są do wirtualnego życia w pamięci komputera) obiekty</p>
+
+<h1>4. Dlaczego stosujemy programowanie obiektowe?</h1>
+<ul>
+<li>Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowy dokonujemy pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. Definiujemy pola czyli jego stan np. rok produkcji, marka, kolor. Definiujemy również metody czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej</li>
+<li>Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ gdy obiekt staje się zbędny możemy go usunąć co zwolni pamięć zajmowaną przez ten obiekt. W programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka.</li>
+<li>W programowaniu obiektowym dobrze napisana i przetestowana klasa pozwala na stosowaniu przez innych programistów. Zaoszczędza to czas i środki pieniężne.</li>
+</ul>
+
+<h1>5. Omów następujące pojęcia (w krótkiej formie),</h1>
+<ul>
+<li><b>Klasa</b> - klasa rodzaj foremki, która opisuje nam jak będą wyglądać tworzone na jej podstawie nowe obiekty. Klasa jest to złożony typ będący opisem (definicją) obiektu/obiektów wraz z definicją pól i metod obiektów.</li>
+<li><b>Obiekt</b> - instancja (byt, twór) który powstał na podstawie klasy. Czyli Obiekty są konstrukcjami programistycznymi mającymi tak zwane właściwości (inaczej pola obiektu), którymi mogą być zmienne lub inne obiekty. Z obiektami powiązane są funkcje wykonujące operacje na ich właściwościach, nazywane metodami.</li>
+<li><b>Właściwość</b> - własność obiektu, np. kolor.</li>
+<li><b>Metoda</b> - zdolność (czynność) którą umie wykonywać obiekt, np. chodzenie (idź). Realizowane w postaci konstrukcji podobnej do funkcji.</li>
+<li><b>Konstruktor</b> - metoda wywoływana w momencie inicjalizacji obiektu. np. tworzymy obiekt a wraz z tworzeniem obiektu uruchomi się metoda, która nada np. Imię i Nazwisko.</li>
+<li><b>Destruktor</b> - (ang. "descructor "jest wywoływany automatycznie podczas niszczenia obiektów. Nie przyjmuje żadnych argumentów. W przeciwieństwie do konstruktorów, w klasie może być tylko jeden destruktor.</li>
+<li><b>Dziedziczenie</b> - klasa może dziedziczyć własności od innej klasy. Tworzymy klasę na podstawie innej klasy pobierając od „rodzica” właściwości i metody, może dopisać nowe pola i nowe metody.</li>
+<li><b>Hermetyzacja</b> - wewnątrz ciała klasy znajdują się pola i metody. Część pól i metod można odpowiednio ukryć przed "zewnętrznym światem" klasy tak jak to ma miejsce z przedmiotami ze świata rzeczywistego.</li>
+<li><b>Polimorfizm</b> - polimorfizm czyli wielopastaciowość. Oznacza to, że dany obiekt może zmieniać swoją postać w zależności od potrzeb. Może to być realizowane w formie metody wywoływanej z różną ilością parametrów. Tak więc utorzony obiekt może być traktowany polimorficznie bo zachowuje się różnie w zależności od sposobu uruchamiania jego metody.</li>
+</ul>
+ 
+<input type="button" value="Zamknij okno" onclick="okno_zamknij_pisa()">
+</body>
+</html>
