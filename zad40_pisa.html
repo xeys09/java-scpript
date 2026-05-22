@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Z40 Pisarski</title> 
+</head> 
+  <body>
+	<div style="color:red;font-size:50px;"> 
+		<script language="JavaScript"> 
+		var x=prompt("podaj argument x=",""); 
+        var x_pisarski=parseFloat(x);
+		document.write("wykonał Pisarski"+"<br>"); 
+		document.write("czytany argument x="+x_pisarski.toFixed(2)+"<br>")
+		function f_pis(x_pisarski) 
+		{ 
+			if(x_pisarski>=2) {return 9;} 
+			if((x_pisarski<0) && (x_pisarski>-2)) {return (x_pisarski+1)**2;} 
+			if(x_pisarski>=2) {return x_pisarski**3+1;} 
+			if(x_pisarski<-2) {return 1;} 
+        } 
+
+		document.write("f("+x_pisarski.toFixed(2)+")="+f_pis(x_pisarski).toFixed(2)+"<br>");
+		</script>
+	</div> 
+   </body> 
+ </html> 
