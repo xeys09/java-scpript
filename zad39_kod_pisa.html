@@ -1,0 +1,30 @@
+<html>
+	<body>
+		<textarea rows=27 cols=100>
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Pisarski Z38</title> 
+</head> 
+  <body>
+		<font color="green" size="6">Menu<br></font>
+		<font color="red" size="6">1 - Czerwony<br></font>
+		<font color="blue" size="6">2 - Niebieski<br></font>
+		<input type="text" id="zmienna" name="user_imie"><br>
+        <input type="button" name="Pisarski" value="Sprawdź" onclick="fun_pis()" /> 
+		<script> 
+		function fun_pis() { 
+			var x_pis = document.getElementById("zmienna").value
+			if(x_pis == 1 || x_pis.toLowerCase() == "czerwony") { 
+				document.write('<h1 style="color:red;size:7;">wczytałeś kolor czerwony</h1><br />'); } 
+			else if(x_pis == 2 || x_pis.toLowerCase() == "niebieski") { 
+				document.write('<h6 style="color:blue;size:7;">wczytałeś kolor niebieski</h6><br />'); 
+			} 
+		} 
+		</script> 
+   </body> 
+ </html> 
+</textarea>
+	</body>
+</html>
