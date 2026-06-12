@@ -1,0 +1,33 @@
+<html>
+	<body>
+		<textarea rows=114 cols=120>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Przykład użycia pętli - tekst użytkownika</title>
+    <script>
+        var tekst = prompt("Jakie masz inicjały?", "Twój tekst");
+        var ileRazy = prompt("Ile razy powtórzyć tekst?", "10");
+
+        ileRazy = parseInt(ileRazy);
+
+        if (!isNaN(ileRazy) && tekst !== null) {
+            for (var i = 1; i <= ileRazy; i++) {
+
+                for (var p = 1; p <= i; p++) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                document.write(i + ". " + tekst + "<br>");
+            }
+        } else {
+            document.write("Podano nieprawidłowe dane.");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
+</textarea>
+	</body>
+</html>
