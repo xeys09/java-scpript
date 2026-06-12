@@ -1,0 +1,48 @@
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+
+ var l1_t_pis;
+ var l2_t_pis;
+ var pocz_pis;
+ var tekst_pis;
+
+ do {
+     l1_t_pis = prompt("Podaj pierwszą liczbę (20-60):");
+     l1_t_pis = parseInt(l1_t_pis);
+ } while (l1_t_pis < 20 || l1_t_pis > 60);
+
+ do {
+     l2_t_pis = prompt("Podaj drugą liczbę (20-60):");
+     l2_t_pis = parseInt(l2_t_pis);
+ } while (l2_t_pis < 20 || l2_t_pis > 60);
+
+ pocz_pis = prompt("Podaj początkową wielkość tekstu:");
+ pocz_pis = parseInt(pocz_pis);
+
+ tekst_pis = prompt("Podaj dowolny tekst:");
+
+ if (l1_t_pis < l2_t_pis) {
+     for (var i = pocz_pis; i <= 100; i = i + 5) {
+         document.write("<p style=\"font-size:" + i + "px; color: black;\">" + tekst_pis + "</p>");
+     }
+ }
+
+ if (l2_t_pis < l1_t_pis) {
+     for (var i = pocz_pis; i >= 0; i = i - 5) {
+         document.write("<p style=\"font-size:" + i + "px; color: black;\">" + tekst_pis + "</p>");
+     }
+ }
+
+ if (l1_t_pis == l2_t_pis) {
+     document.write("<p style=\"font-size:" + pocz_pis + "px; color: black;\">" + tekst_pis + "</p>");
+ }
+
+ </script>
+</div>
+
+</body>
+</html>
