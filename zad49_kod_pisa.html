@@ -1,0 +1,41 @@
+<html>
+	<body>
+		<textarea rows=114 cols=120>
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+ 
+ var a_pis;
+ var b_pis;
+ var c_pis;
+ 
+ do {
+     a_pis = prompt("Podaj bok a:");
+     b_pis = prompt("Podaj bok b:");
+     c_pis = prompt("Podaj bok c:");
+     
+     a_pis = parseFloat(a_pis);
+     b_pis = parseFloat(b_pis);
+     c_pis = parseFloat(c_pis);
+     
+ } while (
+     isNaN(a_pis) || isNaN(b_pis) || isNaN(c_pis) ||
+     !(a_pis > 0 && b_pis > 0 && c_pis > 0 && 
+       (a_pis + b_pis > c_pis) && 
+       (a_pis + c_pis > b_pis) && 
+       (c_pis + b_pis > a_pis))
+ );
+ 
+ document.write("Podane boki tworzą trójkąt!");
+ 
+ </script>
+</div>
+
+</body>
+</html>
+</textarea>
+	</body>
+</html>
