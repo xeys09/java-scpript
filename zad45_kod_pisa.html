@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html">
+        <style>
+            textarea {
+                width: 90%;
+                height: 90%;
+                resize: none;
+            }
+        </style>
+
+        <script type="text/javascript">
+            function okno_zamknij_pisakod() {
+                window.close()
+            }
+        </script>
+    </head>
+    <body bgcolor="silver">
+<textarea disabled readonly>
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+ 
+ var koniec_petli_pis = prompt("Podaj liczbę:");
+ 
+ koniec_petli_pis = parseInt(koniec_petli_pis);
+ 
+ if (isNaN(koniec_petli_pis)) {
+     document.write("Błąd! Nie podano prawidłowej liczby.");
+ } else {
+     for(i_p = 2; i_p <= koniec_petli_pis; i_p += 2) {
+         document.write(i_p + "<br>");
+     }
+ }
+ 
+ </script>
+</div>
+
+</body>
+</html>
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pisakod()"/>
+</body>
+</html>
