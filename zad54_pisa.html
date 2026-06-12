@@ -1,0 +1,32 @@
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+
+ var a_pis = 5;
+ var b_pis = 21;
+
+ for(i_p = 1; i_p <= b_pis; i_p++) {
+     document.write("*");
+ }
+ document.write("<br>");
+
+ for(i_p = 1; i_p <= a_pis - 2; i_p++) {
+     document.write("*");
+     for(j_p = 1; j_p <= b_pis - 2; j_p++) {
+         document.write("&nbsp;&nbsp;");
+     }
+     document.write("*<br>");
+ }
+
+ for(i_p = 1; i_p <= b_pis; i_p++) {
+     document.write("*");
+ }
+
+ </script>
+</div>
+
+</body>
+</html>
