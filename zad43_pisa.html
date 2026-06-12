@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rodzaje pętli</title>
+</head>
+<body>
+
+    <h1>Rodzaje pętli w programowaniu</h1>
+
+    <section>
+        <h2>1. Pętla for</h2>
+        <p>Opis: Pętla stosowana, gdy z góry wiemy, ile razy kod ma się powtórzyć.</p>
+        <p>Konstrukcja: for (inicjalizacja; warunek; krok) { instrukcje; }</p>
+        <p>Schemat działania:</p>
+        <pre>
+1. Start (inicjalizacja)
+2. Czy warunek spełniony?
+   - Tak: Wykonaj kod -> Zmień licznik (krok) -> Wróć do punktu 2
+   - Nie: Wyjdź z pętli
+        </pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>2. Pętla while (z kontrolowanym wejściem)</h2>
+        <p>Opis: Pętla sprawdza warunek przed każdym wykonaniem kodu. Jeśli na początku warunek jest fałszywy, kod nie wykona się ani razu.</p>
+        <p>Konstrukcja: while (warunek) { instrukcje; }</p>
+        <p>Schemat działania:</p>
+        <pre>
+1. Czy warunek spełniony?
+   - Tak: Wykonaj kod -> Wróć do punktu 1
+   - Nie: Wyjdź z pętli
+        </pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>3. Pętla do while (z kontrolowanym wyjściem)</h2>
+        <p>Opis: Pętla wykonuje kod najpierw, a dopiero potem sprawdza warunek. Dzięki temu kod wykona się co najmniej raz.</p>
+        <p>Konstrukcja: do { instrukcje; } while (warunek);</p>
+        <p>Schemat działania:</p>
+        <pre>
+1. Wykonaj kod
+2. Czy warunek spełniony?
+   - Tak: Wróć do punktu 1
+   - Nie: Wyjdź z pętli
+        </pre>
+    </section>
+
+</body>
+</html>
