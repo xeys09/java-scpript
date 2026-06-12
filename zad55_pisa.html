@@ -1,0 +1,37 @@
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+
+ var a_pis = prompt("Podaj bok a:");
+ var b_pis = prompt("Podaj bok b:");
+ 
+ a_pis = parseInt(a_pis);
+ b_pis = parseInt(b_pis);
+
+ for(i_p = 1; i_p <= b_pis; i_p++) {
+     document.write("*");
+ }
+ document.write("<br>");
+
+ var wiersz_pis = "*";
+ for (var i_p = 1; i_p <= (b_pis - 2); i_p++) {
+     wiersz_pis = wiersz_pis + "&nbsp;&nbsp;";
+ }
+ wiersz_pis = wiersz_pis + "*";
+
+ for(i_p = 1; i_p <= a_pis - 2; i_p++) {
+     document.write(wiersz_pis + "<br>");
+ }
+
+ for(i_p = 1; i_p <= b_pis; i_p++) {
+     document.write("*");
+ }
+
+ </script>
+</div>
+
+</body>
+</html>
