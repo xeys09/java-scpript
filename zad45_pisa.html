@@ -1,0 +1,24 @@
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+ 
+ var koniec_petli_pis = prompt("Podaj liczbę:");
+ 
+ koniec_petli_pis = parseInt(koniec_petli_pis);
+ 
+ if (isNaN(koniec_petli_pis)) {
+     document.write("Błąd! Nie podano prawidłowej liczby.");
+ } else {
+     for(i_p = 2; i_p <= koniec_petli_pis; i_p += 2) {
+         document.write(i_p + "<br>");
+     }
+ }
+ 
+ </script>
+</div>
+
+</body>
+</html>
