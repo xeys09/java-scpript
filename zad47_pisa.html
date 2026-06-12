@@ -1,0 +1,28 @@
+<html>
+<meta charset="utf-8">
+<body bgcolor="white" text="red">
+
+<div>
+ <script language="JavaScript">
+ 
+ var liczba_pis = prompt("Podaj liczbę:");
+ liczba_pis = parseInt(liczba_pis);
+ 
+ var ile_razy_pis = 10;
+ var wielkosc_pis = 42;
+ 
+ if (liczba_pis % 2 == 0) {
+     for (i_p = 1; i_p <= ile_razy_pis; i_p++) {
+         document.write("<font size='" + wielkosc_pis + "' color='blue'>Pisarski</font><br>");
+     }
+ } else {
+     for (i_p = 1; i_p <= ile_razy_pis; i_p++) {
+         document.write("<font size='" + wielkosc_pis + "' color='green'>Cyprian</font><br>");
+     }
+ }
+ 
+ </script>
+</div>
+
+</body>
+</html>
